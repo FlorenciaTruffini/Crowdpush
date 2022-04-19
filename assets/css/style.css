@@ -1,0 +1,168 @@
+*{font-family: 'Poppins', sans-serif; color: white; }
+
+h1{color:white}
+body{background-color: black;}
+hr{color: gray;
+border-width: 1px;}
+header{height: 130px;
+    background-color: #ffcc66;
+
+grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+main{
+    margin: 25px 19px 7px 19px;
+    grid-column: 1 / 3;
+  grid-row: 2;
+   }
+article h2 {color:brown}
+
+.proyecto__img{
+    height:300px;
+    width:350px
+}
+button{
+    background-color: #ffd480;    
+    border-radius: 40px; 
+    border-color: black;
+    border-width: 4px;
+    color: black;
+    transition: background-color 0,5s; 
+    animation-name: boton;
+    animation-duration: 3s;
+}
+
+@keyframes boton {
+    0%{border-width: 20px; 
+    
+}
+100%{ border-width:6px;
+}
+}
+
+button:hover {
+background-color: brown;
+}
+
+
+
+
+
+.centrar {
+    text-align: center;
+   }
+
+ul#sinvineta {
+    list-style-type: none;
+    }
+
+#logo{
+    height: 75px;
+    width: 75px;
+    transform: translateY(20px);
+    
+}
+    
+
+#opiniones {
+            border: solid 1px white;
+            padding: 5px ;
+            display: inline-block;
+            font-size: 12px;
+            width: auto;
+            height: auto;
+            grid-area: opiniones;
+            }
+.add{
+    border: solid 1px black;
+    padding: 5px ;
+    display: block;
+    width: 397px;
+    height: 111px;
+}
+p{
+    text-align : justify;
+    }
+#iframe{ width: 500px;
+    height: 650px;
+    border: none;
+}
+.hipervinculo{text-decoration: none;
+   }
+
+
+
+.flex__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color: rgb(114, 48, 48);
+    padding: 2px 30px;
+    
+}
+
+div#flex__logo{
+    display: flex;
+    justify-content: center;}
+
+
+aside {
+        height: 250px;
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+
+div#flex__barra{
+    display:flex;
+    justify-content: flex-end
+}
+
+div.grid__container{
+    display:grid;
+    grid-auto-rows: auto;
+    row-gap:10px
+    }
+
+
+div#grid{
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "proyectosdelmes proyectosdelmes"
+      "opiniones publicidad"
+      "footer footer";
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: minmax(100px, auto);  
+        }
+
+
+#proyectosdelmes{
+    grid-column: 1 / 3;
+  grid-row: 2;
+  grid-area: proyectosdelmes
+}
+        
+aside {
+    height: 250px;
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+div#publicidad {
+    grid-area: publicidad
+}
+
+footer{height: 140px;
+    background-image: linear-gradient(#ffd480, rgb(141, 66, 66));
+    grid-area: footer; 
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width:767px) {
+
+}
