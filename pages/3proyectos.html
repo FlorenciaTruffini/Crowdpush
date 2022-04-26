@@ -10,22 +10,31 @@
     <title>Proyectos | Crowdpush</title>
 </head>
 <body>
-    <header class="header">
-        <div>   
-            <div id="flex__logo"><img src="./../assets/img/logo.png" id="logo"></div>
-                <div id="flex__barra"><input type="text" name="Búsqueda" id="Búsqueda" placeholder="Búsqueda"></div>
-            
-        </div>
-                <nav>
-                <ul id="sinvineta" class="flex__menu">
-                <b><li><a class="hipervinculo" href="../index.html">INICIO</a></li></b>
-                <b><li><a class="hipervinculo" href="2sobre_nosotros.html">SOBRE NOSOTROS</a></li></b>
-                <b><li><a class="hipervinculo" href="3proyectos.html">PROYECTOS</a></li></b>
-                <b><li><a class="hipervinculo" href="4empieza_tu_proyecto.html">EMPIEZA TU PROYECTO</a></li></b>
-                <b><li><a class="hipervinculo" href="5registrarse.html">REGISTRARSE</a></li></b>
-            </ul>
+    <header id="header">
+        <div class="container-fluid">   
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid">
+                    <div class="navbar-brand" id="flex__logo"><img src="../assets/img/logo.png" id="logo"></div> 
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                <ul id="sinvineta" class="navbar-nav ms-3 flex__menu">
+                    <b><li class="nav-item"><a class="nav-link" class="hipervinculo" href="../index.html">INICIO</a></li></b>
+                    <b><li class="nav-item"><a class="nav-link" class="hipervinculo" href="../pages/2sobre_nosotros.html">SOBRE NOSOTROS</a></li></b>
+                    <b><li class="nav-item"><a class="nav-link" class="hipervinculo" href="../pages/3proyectos.html">PROYECTOS</a></li></b>
+                    <b><li class="nav-item"><a class="nav-link" class="hipervinculo" href="../pages/4empieza_tu_proyecto.html">EMPIEZA TU PROYECTO</a></li></b>
+                    <b><li class="nav-item"><a class="nav-link" class="hipervinculo" href="../pages/5registrarse.html">REGISTRARSE</a></li></b>
+                </ul>
+                 </div> 
+                 <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>      
+        </div>   
         </nav>
-    </header>
+        </div>  
+        </header>
     <main>
         <nav>
             <h2>Categorías</h2>
@@ -134,7 +143,7 @@
         <div class="col-lg-3 col-md-6">
             <h3>Nuestro Newsletter</h3>
             <p>Si querés suscribirte a nuestro newsletter mensual de novedades sobre los proyectos disponibles, dejanos tu mail y nos pondremos en contacto.</p>
-        <form action method="post">
+        <form class="suscribe" action method="post">
            <input id="email" type="email" name="email" placeholder="email@gmail.com">
             <input id="suscribete" type="submit" value="Suscríbete">
         </form>
@@ -144,8 +153,8 @@
          </div>
          <br>
          <div class="container">
-             <div class="copyright">
-          © Crowdpush 2022</div>
+            <small><div class="copyright">
+                © Crowdpush 2022</div></small>
          </div>
          </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

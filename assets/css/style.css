@@ -4,11 +4,11 @@ h1{color:white}
 body{background-color: black;}
 hr{color: gray;
 border-width: 1px;}
-header{height: 130px;
-    background-color: #ffcc66;
-
+header{
+    background-color: #2d1a07;
 grid-column: 1 / 3;
   grid-row: 1;
+  width:100%;
 }
 
 main{
@@ -16,7 +16,7 @@ main{
     grid-column: 1 / 3;
   grid-row: 2;
    }
-article h2 {color:brown}
+article h2 {color:#2d1a07}
 
 .proyecto__img{
     height:300px;
@@ -33,16 +33,10 @@ button{
     animation-duration: 3s;
 }
 
-@keyframes boton {
-    0%{border-width: 20px; 
-    
-}
-100%{ border-width:6px;
-}
-}
+
 
 button:hover {
-background-color: brown;
+background-color: #2d1a07;
 }
 .centrar {
     text-align: center;
@@ -55,8 +49,7 @@ ul#sinvineta {
 #logo{
     height: 75px;
     width: 75px;
-    transform: translateY(20px);
-    
+     
 }  
 #opiniones {
             border: solid 1px white;
@@ -81,17 +74,17 @@ p{
     height: 650px;
     border: none;
 }
-.hipervinculo{text-decoration: none;
+.hipervinculo{text-decoration: none !important;
    }
 
 
 
 .flex__menu{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: flex-end;
-    background-color: rgb(114, 48, 48);
+    justify-content: space-evenly;
+    background-color: rgb(45 26 7);
     padding: 2px 30px;
     
 }
@@ -145,11 +138,12 @@ aside {
 }
 
 div#publicidad {
-    grid-area: publicidad
+    grid-area: publicidad;
+    justify-content: center;
 }
 
 footer{
-    background-image: linear-gradient(#ffd480, rgb(141, 66, 66));
+    background-color:rgb(45 26 7);
     grid-area: footer; 
     grid-column: 1 / 3;
     grid-row: 4;
@@ -179,4 +173,24 @@ input#suscribete {
 input#email {
     width: 50%;
     height: 44px
+}
+.nav-link{
+    color: #fff;
+    font-size: 13px;
+}
+
+.btn-outline-success {
+    color: black;
+    border-color:black;
+}
+
+.form-inline{
+display: flex;
+flex-direction: row;
+background-image: linear-gradient(#ffd480, rgb(141, 66, 66));
+}
+
+.suscribe {
+    display: flex;
+    flex-direction: row;
 }
