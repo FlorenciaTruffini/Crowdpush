@@ -1,0 +1,188 @@
+
+*{font-family: 'Poppins', sans-serif; color:white} 
+
+
+h1{color:white}
+body{background-color: black;}
+header{
+    background-color: #2d1a07;
+grid-column: 1 / 3;
+  grid-row: 1;
+  width:100%;
+}
+
+main{
+    margin: 25px 19px 7px 19px;
+    grid-column: 1 / 3;
+    grid-row: 2;
+   }
+
+.proyecto__img{
+    height:300px;
+    width:350px
+}
+button{
+    background-color: #ffd480;    
+    border-radius: 40px; 
+    border-color: black;
+    border-width: 4px;
+    color: black;
+    transition: background-color 0,5s; 
+    animation-name: boton;
+    animation-duration: 3s;
+    &:hover{
+        background-color: #2d1a07;
+    }
+}
+
+.centrar {
+    text-align: center;
+   }
+
+ul#sinvineta {
+    list-style-type: none;
+    }
+
+#logo{
+    height: 75px;
+    width: 75px;
+     
+}  
+#opiniones {
+            border: solid 1px white;
+            padding: 5px ;
+            display: inline-block;
+            font-size: 12px;
+            width: auto;
+            height: auto;
+            grid-area: opiniones;
+            }
+.add{
+    border: solid 1px black;
+    padding: 5px ;
+    display: block;
+    width: 397px;
+    height: 111px;
+}
+p{
+    text-align : justify;
+    }
+#iframe{ width: 500px;
+    height: 650px;
+    border: none;
+}
+.hipervinculo{text-decoration: none !important;
+   }
+.flex__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-color: rgb(45,26,7);
+    padding: 2px 30px;
+    
+}
+
+div#flex__logo{
+    display: flex;
+    justify-content: center;}
+
+
+aside {
+        height: 250px;
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+
+div#flex__barra{
+    display:flex;
+    justify-content: flex-end
+}
+
+div#grid{
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "proyectosdelmes proyectosdelmes"
+      "opiniones publicidad"
+      "footer footer";
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: minmax(100px, auto);  
+        }
+
+#proyectosdelmes{
+    grid-column: 1 / 3;
+  grid-row: 2;
+  grid-area: proyectosdelmes;
+  div.grid__container{
+    display:grid;
+    grid-auto-rows: auto;
+    row-gap:10px
+    }            
+}
+        
+aside {
+    height: 250px;
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+div#publicidad {
+    grid-area: publicidad;
+    justify-content: center;
+}
+$color-footer:rgb(45,26,7);
+
+footer{
+    background-color:$color-footer;
+    grid-area: footer; 
+    grid-column: 1 / 3;
+    grid-row: 4;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0 15px 0;
+    font-size: 14px;
+}
+
+.copyright{
+    text-align: center;
+}
+input#suscribete {
+    background-image: linear-gradient(#ffd480, rgb(141, 66, 66));
+    border: solid white 1.5px;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    height: 44px;
+}
+input#email {
+    width: 50%;
+    height: 44px
+}
+.nav-link{
+    color: #fff;
+    font-size: 13px;
+}
+
+.btn-outline-success {
+    color: black;
+    border-color:black;
+}
+
+.form-inline{
+display: flex;
+flex-direction: row;
+background-image: linear-gradient(#ffd480, rgb(141, 66, 66));
+}
+
+.suscribe {
+    display: flex;
+    flex-direction: row;
+}
