@@ -71,7 +71,7 @@ p{
     height: 650px;
     border: none;
 }
-.hipervinculo{text-decoration: none !important;
+.hipervinculo{text-decoration: none;
    }
 .flex__menu{
     display: flex;
@@ -132,7 +132,6 @@ div#publicidad {
     grid-area: publicidad;
     justify-content: center;
 }
-$color-footer:rgb(45,26,7);
 
 footer{
     background-color:$color-footer;
