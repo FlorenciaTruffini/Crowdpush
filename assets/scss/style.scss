@@ -4,11 +4,18 @@
 
 h1{color:white}
 body{background-color: black;}
+
+/* encabezado*/
 header{
     background-color: #2d1a07;
 grid-column: 1 / 3;
   grid-row: 1;
   width:100%;
+  position: fixed; 
+}
+.nav-link{
+    color: #fff;
+    font-size: 13px;
 }
 
 main{
@@ -21,7 +28,7 @@ main{
     height:300px;
     width:350px
 }
-button{
+/*button{
     background-color: #ffd480;    
     border-radius: 40px; 
     border-color: black;
@@ -33,7 +40,7 @@ button{
     &:hover{
         background-color: #2d1a07;
     }
-}
+}*/
 
 .centrar {
     text-align: center;
@@ -111,7 +118,7 @@ div#grid{
   grid-template-rows: minmax(100px, auto);  
         }
 
-#proyectosdelmes{
+/*#proyectosdelmes{
     grid-column: 1 / 3;
   grid-row: 2;
   grid-area: proyectosdelmes;
@@ -120,19 +127,15 @@ div#grid{
     grid-auto-rows: auto;
     row-gap:10px
     }            
-}
+}*/
         
-aside {
-    height: 250px;
-    grid-column: 2 / 3;
-    grid-row: 3;
-}
 
 div#publicidad {
     grid-area: publicidad;
     justify-content: center;
 }
 
+/* Aquí comienza footer*/
 footer{
     background-color:$color-footer;
     grid-area: footer; 
@@ -165,10 +168,7 @@ input#email {
     width: 50%;
     height: 44px
 }
-.nav-link{
-    color: #fff;
-    font-size: 13px;
-}
+
 
 .btn-outline-success {
     color: black;

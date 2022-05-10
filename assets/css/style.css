@@ -1,5 +1,5 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   color: white; }
 
 h1 {
@@ -8,20 +8,39 @@ h1 {
 body {
   background-color: black; }
 
-header {
+/*Header*/
+  header {
   background-color: #2d1a07;
   grid-column: 1 / 3;
   grid-row: 1;
-  width: 100%; }
+  width: 100%;
+position: absolute; }
 
-main {
-  margin: 25px 19px 7px 19px;
-  grid-column: 1 / 3;
-  grid-row: 2; }
+.form-inline {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(#ffd480, #8d4242); }
 
-.proyecto__img {
+.nav-link {
+    color: #fff;
+    font-size: 13px; }
+
+/*Fin Header*/
+
+/*proyectos carousel*/
+
+h5.proyecto__titulo {
+  color:black;
+  font-style: italic;
+}
+
+p.proyecto__descripcion { 
+  color:black;
+  font-style: italic;
+}
+/*.proyecto__img {
   height: 300px;
-  width: 350px; }
+  width: 350px; }*/
 
 button {
   background-color: #ffd480;
@@ -59,10 +78,12 @@ ul#sinvineta {
   padding: 5px;
   display: block;
   width: 397px;
-  height: 111px; }
+  height: 111px;
+ }
 
 p {
   text-align: justify; }
+
 
 #iframe {
   width: 500px;
@@ -93,22 +114,22 @@ div#flex__barra {
   display: flex;
   justify-content: flex-end; }
 
-div#grid {
+/*Aplicando Grid en Index*/
+div#gridindex {
   display: grid;
-  grid-template-areas: "header header" "proyectosdelmes proyectosdelmes" "opiniones publicidad" "footer footer";
+  grid-template-areas: "header header"
+ "proyectosdelmes proyectosdelmes"
+ "opiniones publicidad"
+ "footer footer";
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   grid-template-rows: minmax(100px, auto); }
 
-#proyectosdelmes {
+ #proyectosdelmes {
   grid-column: 1 / 3;
   grid-row: 2;
-  grid-area: proyectosdelmes; }
-  #proyectosdelmes div.grid__container {
-    display: grid;
-    grid-auto-rows: auto;
-    row-gap: 10px; }
-
+  grid-area: proyectosdelmes; 
+}
 aside {
   height: 250px;
   grid-column: 2 / 3;
@@ -149,19 +170,82 @@ input#email {
   width: 50%;
   height: 44px; }
 
-.nav-link {
-  color: #fff;
-  font-size: 13px; }
+
 
 .btn-outline-success {
   color: black;
   border-color: black; }
 
-.form-inline {
-  display: flex;
-  flex-direction: row;
-  background-image: linear-gradient(#ffd480, #8d4242); }
+
 
 .suscribe {
   display: flex;
   flex-direction: row; }
+
+/*Sobre Nosotros*/
+section#identidad{
+ padding-top: 100px ; 
+}
+/*Proyectos*/
+nav#categorias {
+  padding-top: 100px ;
+  padding-bottom: 30px; 
+ }
+ ul#lista_categorias {
+  list-style: none; 
+ }
+
+ .col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15
+{
+  position: relative;
+  min-height: 1px; 
+}
+.col-xs-15
+{
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px)
+{
+  .col-sm-15
+  {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px)
+{
+  .col-md-15
+  {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px)
+{
+  .col-lg-15
+  {
+    width: 20%;
+    float: left;
+  }
+}
+
+
+/*Empieza tu Proyecto*/
+div#empieza_tu_proyecto {
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+button#boton_enviar_proyecto {
+  color: white !important;
+  background-image: linear-gradient(#ffd480, #8d4242) !important;
+}
+
+/*Registrarse*/
+div#registrarme {
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
