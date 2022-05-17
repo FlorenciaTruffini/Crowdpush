@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./../assets/img/logo.png">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>   
     <title>Empieza tu Proyecto | Crowdpush</title>
 </head>
 <body>
@@ -47,25 +48,76 @@
         <!-- Fin Navbar -->
     
     <!-- Contenido -->
-    <div id="empieza_tu_proyecto" class="container">
-        <h2 class="centrar">EMPIEZA TU PROYECTO</h2>
-        
+    <section id="empieza_tu_proyecto">
+    <div class="container">
+     <h1 class="centrar">EMPIEZA TU PROYECTO</h1>
+
+     <div class="row margenbox">
+    <div class="col-12 w-50 intro">
+     <h2>Empecemos juntos tu campaña de Crowdfunding!</h2>
+     <p class="texto_intro">Queremos que tu experiencia sea positiva. Te invitamos a completar la siguiente información y estar a un paso 
+         más cerca de llevar a cabo tu idea de negocio.</p>
+    </div>
+    </div>
+        <div class="formulario">
+            <h4>Nombre de usuario</h4>
+            <a href="./5registrarse.html"><p style="font-size:11px;">¿Todavía no tienes usuario?</p></a>
+            <input class="campo" "type="text" name="nombres" id="nombres" placeholder="Ingresar usuario">
+            <h4>Tipo de cuenta en la que se depositarán los fondos</h4>
+            <div class="row">
+                <div class="form-check col-4">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Individual
+                </label>
+              </div>
+              <div class="form-check col-4">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Empresa
+                </label>
+            </div>
+              </div>
+        <h4>Lugar de residencia del proyecto</h4>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="simpleDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            País
+            </button>
+            <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item">Argentina</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item">Brasil</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item">Chile</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item">Colombia</a>
+            <hr class="dropdown-divider">
+            <a class="dropdown-item">Ecuador</a>
+            </div>
+        </div>
         <h4>Seleccione Categoría</h4>
         <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="simpleDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Categoría
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"></div>
-        <a class="dropdown-item" href="#">Arte & Música</a>
-        <a class="dropdown-item" href="#">Videojuegos</a>
-        <a class="dropdown-item" href="#">Tecnología</a>
-        <a class="dropdown-item" href="#">Negocios</a>
-        <a class="dropdown-item" href="#">Gastronomía</a>
+        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item">Arte & Música</a>
+        <hr class="dropdown-divider">
+        <a class="dropdown-item">Videojuegos</a>
+        <hr class="dropdown-divider">
+        <a class="dropdown-item">Tecnología</a>
+        <hr class="dropdown-divider">
+        <a class="dropdown-item">Negocios</a>
+        <hr class="dropdown-divider">
+        <a class="dropdown-item">Gastronomía</a>
         </div>
+    </div>
+    
          <h4>Presentar Plan de Negocios o Informe de su Proyecto</h4>
          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Seleccionar Archivo</button>
-         <button id="boton_enviar_proyecto" class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Enviar Proyecto</button>
+         <button id="boton_enviar_proyecto" class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Empezar el Proyecto!</button>
         </div>
+        </section>
 <!-- Fin Contenido -->
 <!-- Footer -->
     <footer id="footer">

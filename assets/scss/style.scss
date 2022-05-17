@@ -3,10 +3,31 @@
     font-family: 'Roboto Mono', monospace;
     color: white; }
   
-  
+    /*header*/
   h1 {
     color: white;
-  padding:30px 30px; }
+  padding:30px 30px;
+    overflow: hidden;
+    text-align: center;
+   }
+   h1:before,
+   h1:after {
+    background-color:rgb(202, 202, 175);
+    content: "";
+    display: inline-block;
+    height: 0.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+   }
+   h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+   h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
   
   body {
     background-color: black; }
@@ -564,7 +585,18 @@
     padding-bottom: 30px; 
    }
    ul#lista_categorias {
-    list-style: none; 
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom:70px;
+   }
+  
+   ul#lista_categorias a{
+     text-decoration: none;
+     font-size: 23px;
+   }
+  
+   ul#lista_categorias a li:hover{
+     color:#b99858;
    }
   
    .col-xs-15,
@@ -666,8 +698,16 @@
     width:300px;
   }
   
+  nav#categorias h1{
+    margin-top:30px;
+    margin-bottom: 40px;
+    background:beige;
+    padding:10px 10px;
+    color:black;
+  }
+  
   /*EMPIEZA TU PROYECTO*/
-  div#empieza_tu_proyecto {
+  section#empieza_tu_proyecto {
     padding-top: 130px;
     padding-bottom: 50px;
   }
@@ -683,9 +723,60 @@
   
   button#boton_enviar_proyecto:hover {
       background-color: #2d1a07;
-    color:whitesmoke;
+    color:whitesmoke  !important;
   border-color:whitesmoke}
   
+  hr.dropdown-divider{
+    margin:0% ;
+    padding:0% ;
+  }
+  
+  div.intro{
+    
+    background:beige;
+    color:black;
+    text-align: center;
+    justify-content: center;
+    margin:0 auto;
+  }
+  
+  div.intro:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+  }
+  
+  div.margenbox{
+    margin-top:65px;
+    margin-bottom:80px;
+  }
+  
+  div.intro h2{
+    color:black;
+    font-style: oblique;
+    text-decoration: solid;
+    text-transform: capitalize;
+    font-size:30px;
+  }
+  
+  p.texto_intro{
+    line-height: 35px;
+    margin-top:15px;
+    margin-bottom:15px;
+    color:black;
+    font-size:18px;
+  }
+  
+  /*formulario*/
+  
+  div.formulario{
+    font-size:13px;
+  }
+  
+  h4{
+    font-size:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   
   /*REGISTRARSE*/
   section#registrarme {
