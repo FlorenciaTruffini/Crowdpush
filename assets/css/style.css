@@ -554,6 +554,9 @@ div.pasos{
 
 
 /*PROYECTOS*/
+div#proyectos_categorias{
+  margin-bottom: 40px;
+}
 
 nav#categorias {
   padding-top: 100px ;
